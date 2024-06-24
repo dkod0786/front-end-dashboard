@@ -1,0 +1,114 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Use full viewport height */
+  width: 100%;
+  max-width: 100%;
+  /* overflow: hidden; */
+}
+
+.header {
+  flex: 0 0 10%; /* Header takes 10% of the height */
+  color: #000000;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.content {
+  flex: 1; /* Content takes the remaining space */
+  color: #000000;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding: 50px;
+  overflow: auto;
+}
+
+.footer {
+  display: none;
+  flex: 0 0 10%; /* Footer takes 10% of the height */
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.header-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Adjust as necessary */
+  width: auto; /* Maintains aspect ratio */
+  border-radius: 8px;
+}
+
+.analyze-content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.pr-score-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16;
+}
